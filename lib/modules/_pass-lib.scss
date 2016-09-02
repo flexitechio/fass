@@ -1,0 +1,21 @@
+
+	// =========================== media query mixin ===============================
+	@mixin mediaQueryMax($screen) {
+		@media (max-width: $screen) { @content; }
+	}
+ 
+	@mixin mediaQuery($screen) {
+		@media only screen and (max-width: $screen) { @content; }
+	}
+ 
+	@mixin mediaQueryHeight($screen) {
+		@media only screen and (max-height: $screen) { @content; }
+	}
+
+	@mixin mediaQueryMin($screen) {
+		@media only screen and (min-width: $screen) { @content; }
+	}
+
+	@mixin mediaQueryMinMax($min,$max) {
+		@media only screen and (min-width: $min) and (max-width: $max) { @content; }
+	}

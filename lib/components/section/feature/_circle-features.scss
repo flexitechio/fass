@@ -1,0 +1,54 @@
+/**
+ * Company : Flexitech
+ * Author : Seng Panhna - Teachnical Manager UX/UI Designer
+ * Date : 04 Jan, 2016
+ */
+.section-features{
+
+	$deskWidHei: 200px;
+	$MobiWidHei: 185px;
+
+	text-align: center;
+	padding-top: 20px;
+	.feature-icon{
+		max-height: 80px;
+		margin: auto;
+		@include transition(transform,.2s,ease-out);
+	}
+	.photo{
+		@extend .circle-radius;
+		@extend .flexbox-container;
+		height: $deskWidHei;
+	    width: $deskWidHei;
+		padding: 20px;
+		background-color: $primary_col;
+		margin: auto;
+	}
+	.number{
+		font-size: 26px;
+		letter-spacing: 2px;
+	    font-weight: bold;
+	}
+	.title{
+		font-size: 20px;
+		text-transform: capitalize;
+	}
+	.feature-item{
+		display: inline-block;
+		padding: 20px 30px;
+		color: black;
+		&:hover{
+			color: lighten(black, 30);
+			.feature-icon{
+				@include transform(scale(1.1));
+			}
+		}
+	}
+	@include mediaQuery(767px){
+		.photo{
+			width: $MobiWidHei;
+			height: $MobiWidHei;
+		}
+	}
+
+}

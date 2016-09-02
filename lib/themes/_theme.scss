@@ -1,0 +1,123 @@
+// default theme color
+$mainColDrak: #41A291;
+
+$mainCol: #44AD9C;
+ 
+$grayLess: whitesmoke;  
+   
+$blackLess: rgb(84, 84, 84); 
+
+$yellowLess: #FFFACD;   
+
+$col-post-time: #B3B3B3;  
+  
+$in-out-cubies: cubic-bezier(0.65, 0.05, 0.36, 1);  
+
+$gray-back: #EEEEEE;
+
+$border-gray-less: rgba(239, 239, 239, 0.4);
+
+$text-gray-less: rgb(239, 239, 239);
+
+// social
+$col-fb: #428bca; // facebook
+
+$col-tw: #55ACEE; // twitter  
+$col-g: red; // google    
+
+$warning_col: #A94242;
+  
+$back-col-cover: gainsboro; 
+
+// // ============== theme for project =============
+
+// layout config
+$max_width_global: 1000px;
+$max_width_menu: $max_width_global;
+$max_width_content: $max_width_global;
+
+// base color
+$primary_col: lighten(#002050, 5);
+$primary_dark: darken($primary_col, 5);
+$primary_darken: darken($primary_col, 10); //20
+$light_col: lighten($primary_col, 10);
+
+$secondary_col: #39ADE8;
+$secondary_dark: darken($secondary_col, 10);
+
+$silver_col: #CCCCCC;
+
+// default theme color
+$mainColDrak: #41A291;
+
+$mainCol: #44AD9C;
+ 
+$grayLess: whitesmoke;  
+   
+$blackLess: rgb(84, 84, 84); 
+
+$yellowLess: #FFFACD;   
+
+$col-post-time: #B3B3B3;  
+  
+$in-out-cubies: cubic-bezier(0.65, 0.05, 0.36, 1);  
+
+$gray-back: #EEEEEE;
+
+$border-gray-less: rgba(239, 239, 239, 0.4);
+
+$text-gray-less: rgb(239, 239, 239);
+
+// social
+$col-fb: #428bca; // facebook
+
+$col-tw: #55ACEE; // twitter  
+$col-g: red; // google    
+
+$warning_col: #A94242;
+  
+$back-col-cover: gainsboro; 
+
+// // ============== theme for project =============
+
+// layout config
+$max_width_global: 1000px;
+$max_width_menu: $max_width_global;
+$max_width_content: $max_width_global;
+
+// base color
+$primary_col: lighten(#002050, 5);
+$primary_dark: darken($primary_col, 5);
+$primary_darken: darken($primary_col, 10); //20
+$light_col: lighten($primary_col, 10);
+
+$secondary_col: #39ADE8;
+$secondary_dark: darken($secondary_col, 10);
+
+$silver_col: #CCCCCC;
+
+
+// carousel
+// --arrow
+$nav_arrow_col: white;
+$nav_arrow_col_hover: $primary_dark;
+
+// menu
+$menu_text_col: $silver_col;
+$menu_text_col_hover: lighten($silver_col, 10); //darken($menu_text_col, 10);
+$menu_text_active_col: darken($menu_text_col, 10);
+$menu_back_col: white; 
+
+// button
+// -- call to action
+$call_to_action_primary: $primary_col;
+$call_to_action_primary_hover: $primary_dark;
+$call_to_action_secondary: $secondary_col;
+$call_to_action_secondary_hover: $secondary_dark;
+$call_to_action_border: white;
+
+// tag
+// -- a tag
+$default_a_tag: darken(white, 10);
+$default_a_tag_hover: white;
+

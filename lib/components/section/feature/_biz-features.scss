@@ -1,0 +1,30 @@
+.biz-feature{
+
+	@at-root #{&}__desc{
+		margin-top: 50px;
+	}
+	@at-root #{&}__features-item{
+		margin-top: 50px;
+
+		@at-root #{&}__img{
+
+			width: 60px;
+			fill: #9B9B9B;
+
+			path {
+				fill: #9B9B9B !important;
+			}
+		
+		}
+
+		@at-root #{&}__img-container{
+			padding-right: 25px;
+		}
+
+		@at-root #{&}__title{
+			color: $primary_dark;
+		}
+
+	}
+
+}

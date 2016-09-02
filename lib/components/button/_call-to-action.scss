@@ -1,0 +1,34 @@
+.fx-call-to-action{
+	padding: 10px 15px;
+	min-width: 180px;   
+	color: white;
+	font-size: 16px;
+	box-shadow: 0 0 4px rgba(black, 0.5);
+	&:hover{
+		color: white;
+	}
+}
+
+.fx-call-to-action--smaller{
+	padding: 5px 10px;
+	min-width: 140px;
+}
+
+.fx-call-to-action--primary{
+	background-color: $call_to_action_primary;
+	&:hover{
+		background-color: $call_to_action_primary_hover;
+	}
+}
+
+.fx-call-to-action--secondary{
+	background-color: $call_to_action_secondary;
+	&:hover{
+		background-color: $call_to_action_secondary_hover;
+	}
+}
+
+.fx-call-to-action--border{
+	background-color: transparent;
+	border: 2px solid $call_to_action_border;
+}

@@ -1,0 +1,26 @@
+.fx-navigator-arrow{
+	$size: 80px;
+	$padding: 60px;
+
+	@at-root #{&}__icon{
+		font-size: $size;
+		color: $nav_arrow_col;
+		display: block;
+	    height: $size;
+	    width: $size; 
+		&:hover{
+			color: $nav_arrow_col_hover;
+			cursor: pointer;
+		}
+	}
+	@at-root #{&}__left{
+		@extend .center-absolute;
+	    left: $padding;
+	    right: inherit;
+	}
+	@at-root #{&}__right{
+		@extend .center-absolute;
+		left: inherit;
+		right: $padding;
+	}
+}

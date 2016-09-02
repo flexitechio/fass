@@ -1,0 +1,15 @@
+.flat-control-form{
+	padding: 30px 0;
+	input,textarea,select{ 
+		border: none;
+		box-shadow: none;
+		min-height: 45px;
+		font-size: 16px;
+		border-radius: inherit;
+	}
+	textarea{
+		min-height: 150px;
+		max-height: 250px;
+		max-width: 100%;
+	}
+}

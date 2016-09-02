@@ -1,0 +1,209 @@
+// ===================== menu ======================
+.menu-container{
+	// padding: 10px 0;
+	background-color: rgba(255, 255, 255, 0.07);
+	z-index: 6 !important;
+	border-top: 5px solid $primary_col; 
+	@include transition(transform,0.3s,ease-out);  
+
+		position: fixed !important;
+		width: 100%;
+
+	.menu{
+		max-width: $max_width_menu;
+		margin: auto;
+	}
+	.navbar-toggle{
+		margin: 10px 5px 10px 0;
+		[class^="icon-"]{
+			border: 1px solid white;//$menu_text_col; 
+		}
+	}
+	.navbar-brand{
+		height: auto;
+		color: white;
+		font-size: 26px;
+		padding: 10px 0;
+		position: relative;
+		img{
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 10px;
+			max-width: 150px;
+		}
+		.text-container{
+			display: inline-block;
+			vertical-align: middle;
+			padding-top: 5px; 
+		}
+		.logo-slogan{
+			font-size: 13px;
+			position: relative;
+			font-weight: 300;
+		}
+	}
+	.nav{
+		>li{
+			>a{
+			    color: white;//$menu_text_col;
+			    font-size: 15px;
+			    font-weight: bold;
+			    text-shadow: 0 3px 4px rgba(0, 0, 0, 0.09);
+				font-size: 14px;
+				padding: 15px 15px;
+				&:hover,&:active,&:focus{ 
+					background-color: inherit;
+				}
+				&:hover{
+					color: $menu_text_col_hover;
+				}
+
+				&.border-left{
+					border-left: 1px solid rgba(255, 255, 255, 0.16);
+				}
+			}
+		}
+
+		// active color as default menu style
+		&.col-active{
+			.active{
+				>a{
+					color: $menu_text_active_col;
+				}
+			}
+		}
+
+		&.border-active{
+			.active{
+				>a{
+					border-bottom: 4px solid $menu_text_col;
+				}
+			}
+		}
+
+	}
+	 
+	// prepare for animate if user scroll (scroll top window > height of menu) so we hide first want to show again with animate
+	&.prepare_for_animate{
+		@include transform(translate3d(0,-100%,0));
+		// position: fixed !important;
+		// width: 100%;
+	}
+
+	&.fix_menu{
+		// position: fixed !important;
+		// width: 100%;
+		background-color: rgba(black, 0.40);
+		@include transform(translate3d(0,0,0));
+	}
+ 
+    &.nav-up{
+    	@include transform(translate3d(0,-60px,0));
+    }
+ 
+	@include mediaQuery(1023px){
+		.navbar-header{
+			.navbar-brand{
+				padding: 7px 20px;
+				img{
+					max-width: 90px;
+					margin-right: 5px;
+				}
+				.text-container{
+					font-size: 20px;
+					padding: 0;
+				}
+			}
+		}  
+		.nav{
+			>li{
+				>a{
+					padding: 20px 7px;
+				}
+			}
+		}
+	} 
+
+	@include mediaQuery(767px){
+		// background-color: $menu_back_col;
+		// 
+		border-top: none;
+		position: relative;
+		z-index: 10;
+		border-bottom: 1px solid rgba(white, .09);
+		padding: 0;
+		.navbar-collapse{
+			padding: 0; 
+			// border-top: 1px solid rgba(white, .59);
+		}
+		.navbar-header{
+			&.in{
+				background-color: rgba(86, 86, 86, 0.82);
+				.header-title{
+					padding: 10px;
+				    position: relative;
+				    top: 4px;
+					display: inline-block !important;
+				}
+			}
+			.navbar-brand{
+				padding: 0px 20px;
+			}
+		}
+		.collapse{ 
+			padding: 0;
+			// height: 0;  
+			overflow: hidden;
+			@include transition(height .3s ease-out);
+			// position: absolute;
+			// width: 100%;
+			// z-index: 10;
+			// background-color: $mainCol;
+			&.show{
+				height: 328px;
+				border-bottom: 1px solid rgba(white, .09);
+			}
+			&.in{
+
+			}
+		}
+		.nav{
+			height: 100vh;
+			width: 100%;
+			margin: 0;
+			padding: 5px 0;
+			>li{
+				>a{
+					//padding: 15px;
+					font-size: 20px;
+				    padding: 20px;
+				    text-align: center;
+				    &.border-top{
+				    	border-top: 1px solid rgba(255, 255, 255, 0.16);
+				    }
+				}
+			} 
+		}
+		.menu{
+			border-top: 5px solid #6EA33B; 
+			position: fixed;
+			width: 100%;
+			background-color: transparent;// $menu_back_col;
+			background-color: rgba(0, 0, 0, 0.9);
+			&.shadow-mobile--xs{
+				box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.27);
+			}
+		}
+		.navbar-toggle{
+			margin: 8px 5px 5px 0;
+		}
+		.navbar-header{
+			padding: 10px 0;
+		}
+	} 
+
+}
+
+.margin-l-5{
+	margin-left: 5px;
+}

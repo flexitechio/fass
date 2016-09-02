@@ -1,0 +1,11 @@
+.btn-primary--fx{
+	padding: 8px 10px;
+	background-color: $primary_col;
+	min-width: 150px;   
+	color: white;
+	font-size: 16px;
+	&:hover{
+		color: white;
+		background-color: $primary_dark;
+	}
+}

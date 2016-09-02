@@ -1,0 +1,16 @@
+#map-window-info{
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 20px;
+    img{
+    	max-width: 100%;
+    }
+    @include mediaQuery(767px){
+    	img{
+    		max-width: 100px;
+    	}
+    	.main-title{
+    		font-size: 14px;
+    	}
+    } 
+}

@@ -1,0 +1,133 @@
+.contact-form{
+
+	.social-list{
+		@extend .clearUL;
+		>li{
+			display: inline-block;
+			>a{
+				display: block;
+				padding: 5px;
+				font-size: 20px;
+				margin: 0 10px;
+				height: 40px;
+				width: 40px; 
+				background-color: $primary_col;
+				@include transition(background-color .3s ease);
+				&:hover{
+					background-color: $primary_dark;   
+				}
+				>span{
+					position: relative; 
+					top: 3px;
+					color: white;
+				} 
+			}
+		}
+		&.text-left{
+			>li{
+				>a{
+					margin: 0 10px 0 0;
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	&.left-form-right-info{
+		.default{
+			@extend .flat-control-form;
+			.form-control{
+				border: 1px solid #eeeeee;
+			}
+		}
+		.more-info{
+			@extend .clearUL;
+		}
+		.title-item{
+			font-weight: bold;
+		}
+		.location{
+			.title-item{
+				margin-top: 0;
+			}
+		}
+		.social{
+			margin-top: 15px;
+		}
+		.contact-phone,.contact-email{
+			margin-bottom: 10px;
+			[class^="icon-"]{
+				font-size: 24px;
+				vertical-align: text-bottom;
+			    position: relative;
+			    top: 2px;
+			    color: $primary_col;
+			}
+			.txt{
+				font-size: 18px;
+				margin-left: 8px;
+			}
+		}
+		@include mediaQuery(767px){
+			text-align: center;
+			.text-right,.text-left{
+				text-align: center;
+			}
+			.social{
+				margin-bottom: 30px;
+			}
+			.default{
+				padding: 0;
+			}
+		}
+	}
+
+	.contact-error-helper{
+		padding: 10px;
+	    color: $warning_col;
+	    font-weight: bold;
+	    .icon-warning{
+	    	margin-right: 5px;
+	    }
+	}
+
+	.contact-success-helper{
+		padding: 10px;
+	    color: $primary_col;
+	    font-weight: bold;
+	    .icon-email{
+	    	margin-right: 5px;
+	    }
+	}
+
+	.btn-shake{
+		//animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) 1s both;
+		animation-delay: 1s;
+		animation-name: shake;
+		animation-timing-function: cubic-bezier(.36,.07,.19,.97);
+		animation-duration: 0.82s;
+		animation-iteration-count: both;
+		transform: translate3d(0, 0, 0);
+		backface-visibility: hidden;
+		perspective: 1000px;
+	}
+
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}

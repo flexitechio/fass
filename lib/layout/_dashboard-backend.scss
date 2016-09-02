@@ -1,0 +1,85 @@
+body{
+	font-family: 'Hanuman','Roboto','Open Sans', sans-serif;
+	// font-family: 'Exo', sans-serif;
+	color: $blackLess;  
+	font-size: 16px;   
+	background-color: $gray-back;
+	>.main-content{
+		>header{
+			height: 50px;
+		}
+	} 
+}
+.main-content{
+	padding-left: 280px;
+} 
+.content-container{
+	padding: 20px 30px 30px 30px;
+} 
+.header-content-title{
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.white-box{
+	margin-top: 30px;
+	background-color: white;
+	padding: 20px;
+}
+
+.user-info-inline{
+    img{
+		margin-right: 5px;
+	    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+    }
+}
+
+.badge{
+    &.red{
+        background-color: red;
+    }
+    &.green{
+        background-color: $greenColor;
+    }
+}
+.price,.promote-price{
+	color: red;
+	font-weight: bold;
+}
+
+.promote-price{
+	font-size: 18px;
+}
+
+.stock-price{
+	font-size: 16px;
+	margin-left: 10px;
+	text-decoration: line-through;
+	color: $stock-price-color;
+}
+
+.post-time{
+	font-size: 13px;
+	color: silver;
+}
+
+.verify-icon{
+	color: $primary-col;
+}
+
+.remove-display-table-cell-media{
+	.media-left{
+		float: left;
+		display: block;
+	}
+	.media-body{
+		display: block;
+		width: inherit;
+	}
+}
+
+.no-underline-link{
+	a{
+	    text-decoration: none !important;
+	}
+}

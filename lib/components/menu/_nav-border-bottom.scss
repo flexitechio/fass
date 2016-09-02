@@ -1,0 +1,22 @@
+.fx-nav-border-bottom{
+
+}
+.fx-nav-border-bottom__border-item{
+	overflow: hidden;
+	position: relative;
+	&:hover{
+		.fx-nav-border-bottom__border{
+			bottom: 0;
+		}
+	}
+}
+.fx-nav-border-bottom__border{
+	$border_height: 4px;
+	position: absolute;
+	bottom: -$border_height;
+	left: 0;
+	width: 100%;
+	height: $border_height;
+	background-color: $primary_dark;
+	@include transition(bottom,.3s,ease);
+}

@@ -1,0 +1,29 @@
+.product-business--basic-info{
+	.main-title{
+		margin-top: 50px;
+		font-size: 60px;
+		color: silver;
+	}
+	.sub-title{
+		margin-top: 50px;
+		font-size: 20px;    
+		font-weight: lighter;
+    	line-height: 1.5;
+	}
+}
+
+.product-business--call-to-action{
+	margin-top: 100px;
+	ul{
+		@extend .clearUL;
+	}
+	li{
+		display: inline-block;
+		margin: 0 10px;
+	}
+	.find-out-more{
+		margin-top: 30px;
+		display: inline-block;
+		@extend .fx-a-tag;
+	}
+}

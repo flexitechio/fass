@@ -1,0 +1,13 @@
+// thumbnail image effect
+.thum-effect{
+	.thum-img, .image-div{
+		max-width: 100%;
+	}
+	.image-div{
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 285px;
+	    width: 500px;
+	    display: inline-block;
+	}
+}

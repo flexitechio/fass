@@ -1,0 +1,273 @@
+.slogan{
+	position: relative;
+	z-index: 5;
+	width: 100%;
+	text-align: center;
+	.fx-carousel{
+		@extend .flexbox-container;
+	}
+	&:hover{
+		.carousel-control{
+			opacity: .5;
+			&:hover{ 
+				opacity: 1;
+			}
+		}
+	}
+	.line-height-lg{
+		line-height: 55px;
+	}
+	.item{
+		// height: 170px;
+		// height: 350px;
+		// max-width: 800px;
+		// margin: auto;
+	}
+
+	.owl-controls{
+		.owl-buttons{
+			display: none;
+		}
+		.owl-pagination{
+			@extend .indicators-vertical;
+		    left: inherit;
+		    right: 20px;
+		    @include mediaQuery(767px){
+				height: 20px;
+			    width: inherit;
+			    bottom: -20px;
+			    top: inherit;
+			    right: 0;
+			    left: 0;
+		    }
+		}
+	}
+
+}  
+
+
+// text feature
+.text-feature-item{
+
+	width: 100%;
+	@extend .clearUL;
+	li{
+		margin-bottom: 50px;
+		position: relative;
+	}
+	.feature-text{
+		display: inline-block;
+		padding: 20px;
+		border: 1px solid white;
+		text-align: center;
+		width: 477px;
+		font-size: 24px;
+		max-width: 100%;
+	}
+	.feature-1{
+		left: -100px;
+	}
+	.feature-2{
+		left: 100px;
+	}
+	.feature-3{
+		left: 0px;
+	}
+
+	@include mediaQuery(767px){
+		.feature-1,.feature-2,.feature-3{
+			left: inherit;
+		}
+		li{
+			margin-bottom: 30px;
+		}
+		.feature-text{
+			font-size: 16px;
+			padding: 15px 10px;
+		}
+	}
+
+	@include mediaQuery(350px){
+		li{
+			margin-bottom: 20px;
+		}
+		.feature-text{
+			font-size: 14px;
+		}
+	}
+
+}
+
+// slogan features
+// 
+.slogan-feature-logo{
+	@extend .content-width;
+	.photo{
+		display: inline-block;
+	    position: relative;
+	    margin: 50px;
+	    img{
+	    	max-height: 100px;
+	    }
+	}
+	.text-container{
+		position: absolute;
+	    padding: 0px 15px;
+	    border: 1px solid white;
+	    min-width: 200px;
+	    text-align: center;
+	}
+    .top-right{
+    	.text-container{
+		    top: -50%;
+		    left: 100%;
+		}
+    }
+    .top-left{
+    	.text-container{
+		    top: -50%;
+		    right: 100%;
+		}
+    }
+    .bottom-right{
+    	.text-container{
+		    bottom: -50%;
+		    left: 100%;
+		}
+    }
+    .bottom-left{
+    	.text-container{
+		    bottom: -50%;
+		    right: 100%;
+		}
+    }
+
+    .land{
+    	.text-container{
+    		top: -15%;
+    		min-width: 290px;
+    	}
+    }
+
+    .office{
+    	top: -80px;
+    }
+
+    .car{
+    	margin-left: 0;
+    	top: -20px;
+    	.text-container{
+	    	position: inherit;
+	    	display: inline-block;
+	    	left: 50px;
+    	}
+    }
+
+    .oil{
+    	left: 100px;
+    	top: -100px;
+    	.text-container{
+    		margin-left: 20px;
+    		width: 250px;
+    	}
+    }    
+
+    .staff{
+    	.text-container{
+    		margin-left: 20px;
+    		width: 250px;
+    	}
+    }
+
+    @include mediaQuery(1300px){
+    	max-width: 900px;
+    	padding-top: 30px;
+    	.photo{
+    		margin: 40px;
+    		img{
+    			max-height: 80px;
+    		}
+    	}
+    	h4{
+    		font-size: 16px;
+    	}
+    }
+
+    @include mediaQuery(1023px){
+    	padding: 30px 0 0 0;
+    	.photo{
+    		margin: 50px;
+    	}
+    	.car{
+    		margin-left: 0;
+    		white-space: nowrap;
+    		.text-container{
+    			left: 15px;
+    		}
+    	}
+    	.oil{
+    		left: 50px;
+    	}
+    	.oil,.staff{
+    		.text-container{
+    			width: 200px;
+    		}
+    	}
+    }
+
+    @include mediaQuery(767px){
+    	.photo{
+    		position: initial;
+    		margin: 0;
+    		img{
+    			max-height: 60px;
+    		}
+    	}
+    	.text-container{
+    		position: initial;
+			min-width: inherit !important;
+			width: inherit !important;
+		    display: inline-block;
+		    vertical-align: bottom;
+		    padding: 0 10px;
+		    margin: 0;
+		    &.marg-right{
+		    	margin-right: 10px;
+		    }
+		    &.marg-left{
+		    	margin-left: 10px;
+		    }
+    	}
+	    h4{
+	    	font-size: 14px;
+	    }
+	    .feature-item{
+	    	text-align: center;
+	    	margin-bottom: 30px;
+	    }
+	    .car{
+	    	.visible-xs{
+	    		display: inline-block !important;
+	    	}
+	    }
+    }
+
+	@include mediaQuery(350px){
+    	.photo{
+    		img{
+    			max-height: 45px;
+    		}
+    	}
+		.text-container{
+			padding: 0 8px;
+		}
+		h4{
+			font-size: 12px;
+			margin: 8px 0;
+		}
+	    .feature-item{
+	    	margin-bottom: 20px;
+	    }
+	}
+
+}

@@ -1,0 +1,40 @@
+// scroll circle button 
+.scroll-top{
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px; 
+    padding: 0px 5px;
+    background-color: $primary_col;
+    z-index: 1000;
+    height: 40px;
+    width: 40px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+    @include transform-origin(center center);
+    &.circle{
+    	@include border-top-radius(50%);
+    	@include border-bottom-radius(50%);
+    }
+    >span{
+        font-size: 20px;
+        position: relative;
+        top: 9px; 
+        left: 5px;
+        color: white;
+        display: inline-block;
+        &.rotate-up{  
+        	@include transform(rotate(180deg));
+        }
+    }
+    &:hover{
+        background-color: $primary_dark;
+        span{
+            // color: $primary_dark;
+        }
+    }
+    // responsive
+    @include mediaQuery(767px){
+        bottom: 15px;
+        right: 15px;
+    }
+}

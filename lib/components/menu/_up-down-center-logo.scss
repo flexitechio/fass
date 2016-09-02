@@ -1,0 +1,19 @@
+.menu-center-logo{
+	.menu-list{
+		min-height: 80px;
+		padding: 0 20px;
+	}
+	&.__bottom{
+
+	}
+	.nav{
+		>li{
+			>a{
+				padding: 30px 15px;
+			}
+		}
+	}
+	.logo{
+		padding-top: 20px;
+	}
+}
