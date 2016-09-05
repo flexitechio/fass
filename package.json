@@ -23,6 +23,7 @@
   "homepage": "https://github.com/flexitechio/fass#readme",
   "dependencies": {
     "gulp": "^3.9.1",
-    "gulp-sass": "^2.3.2"
+    "gulp-sass": "^2.3.2",
+    "milligram": "^1.1.0"
   }
 }

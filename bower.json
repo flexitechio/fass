@@ -1,0 +1,27 @@
+{
+  "name": "fass",
+  "description": "Architecture and Style Organization SCSS/SASS",
+  "main": "index.js",
+  "authors": [
+    "flexitech"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "scss",
+    "sass",
+    "css"
+  ],
+  "homepage": "https://github.com/flexitechio/fass",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "milligram": "^1.1.0",
+    "bootstrap-sass": "^3.3.7"
+  }
+}
